@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Invitación de Sidney Andrea</title>
+  <title>Invitación de Dafne Belen</title>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Quicksand', sans-serif;
-      background: linear-gradient(to bottom, #fff4f4, #ffe6e6);
-      color: #333;
+      background: linear-gradient(to bottom, #e8f1ff, #ffffff);
+      color: #2a3b4c;
       overflow-x: hidden;
     }
 
     header {
       text-align: center;
       padding: 50px 20px 20px;
-      background-color: #ffd6d6;
+      background-color: #d4e6ff;
       animation: fadeInDown 1.5s ease;
     }
 
@@ -25,12 +25,16 @@
       font-family: 'Pacifico', cursive;
       font-size: 3em;
       margin: 0;
-      color: #c94f7c;
+      color: #3b6ea5;
+    }
+
+    h2 {
+      color: #355c85;
     }
 
     .subtitle {
       font-size: 1.3em;
-      color: #8c2f4c;
+      color: #355c85;
       margin-top: 10px;
     }
 
@@ -41,6 +45,7 @@
       margin: 30px 0;
       font-size: 1.5em;
       font-weight: bold;
+      color: #24486b;
     }
 
     .section {
@@ -67,15 +72,15 @@
     .names {
       font-size: 1.2em;
       line-height: 1.6;
-      color: #5a2a3c;
+      color: #2a3b4c;
     }
 
     .footer {
-      background-color: #ffd6d6;
+      background-color: #d4e6ff;
       padding: 20px;
       text-align: center;
       font-size: 0.9em;
-      color: #8c2f4c;
+      color: #355c85;
     }
 
     @keyframes fadeInDown {
@@ -90,7 +95,7 @@
 
     .bubble {
       position: absolute;
-      background: rgba(255,255,255,0.3);
+      background: rgba(255,255,255,0.5);
       border-radius: 50%;
       animation: float 8s infinite ease-in-out;
       opacity: 0.6;
@@ -122,7 +127,6 @@
       100% { transform: translateY(-200px); }
     }
 
-    /* Responsive */
     @media screen and (max-width: 600px) {
       h1 { font-size: 2.2em; }
       .countdown { font-size: 1.1em; }
@@ -131,16 +135,17 @@
 </head>
 <body>
 
-  <!-- Floating Bubbles -->
   <div class="bubble"></div>
   <div class="bubble"></div>
   <div class="bubble"></div>
 
   <header>
-    <h1>Sidney Andrea</h1>
+    <h1>Dafne Belen</h1>
     <h2>¡Te invita a celebrar mi primera comunión!</h2>
   </header>
-<h1 style="text-align: center;">Fecha: 11 de octubre</h1>
+
+  <h1 style="text-align: center; color:#3b6ea5;">Fecha: 28 de diciembre</h1>
+
   <section class="section">
     <h2>Cuenta regresiva</h2>
     <div class="countdown" id="countdown">
@@ -154,48 +159,37 @@
   <section class="section">
     <h2>📍 Lugar y hora</h2>
     <p class="names">
-      La misa será a las <strong>3:00 PM</strong><br>
-      en la <strong>Capilla de los Niños Mártires</strong><br>
+      La misa será a las <strong>1:00 PM</strong><br>
+      en la <strong>Iglesia de Tizatlán</strong><br>
       en <strong>San Esteban Tizatlán</strong>
     </p>
   </section>
- 
-    <h1 style="text-align: center;">Lugar del evento:</h1>
-   
-<!--seccion del mapa -->
-  <h1></h1>
+
+  <h1 style="text-align: center; color:#3b6ea5;">Lugar del evento:</h1>
+
   <div class="map-container">
     <iframe 
-      src="https://www.google.com/maps?q=Capilla+de+los+Niños+Mártires+San+Esteban+Tizatlán&output=embed"
-      allowfullscreen
-      loading="lazy">
+      src="https://www.google.com/maps?q=Iglesia%20de%20Tizatl%C3%A1n%20Tlaxcala&output=embed"
+      allowfullscreen loading="lazy">
     </iframe>
   </div>
-<!--seccion del mapa -->
 
-<h1 style="text-align: center;">Residencia:</h1>
-   
-<!--seccion del mapa2 -->
-<h1></h1>
-<div class="map-container">
-  <iframe
-    src="https://www.google.com/maps?q=19.339571,-98.222240&output=embed"
-    allowfullscreen
-    loading="lazy">
-  </iframe>
-</div>
+  <h1 style="text-align: center; color:#3b6ea5;">Residencia:</h1>
 
-  
-  
-<!--seccion del mapa 2-->
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps?q=19.339571,-98.222240&output=embed"
+      allowfullscreen loading="lazy">
+    </iframe>
+  </div>
 
-<section class="section">
+  <section class="section">
     <h2>👨‍👩‍👧 Familia y padrinos</h2>
     <p class="names">
       Papás:<br>
       <strong>Angeles Sarmiento</strong> & <strong>Jhonny Marcos</strong><br><br>
-      Padrinos:<br>
-      <strong>Luz Delgado</strong> & <strong>Enmanuel Montejo</strong>
+      Madrina:<br>
+     <strong>Guadalupe Conde Paredes</strong>
     </p>
   </section>
 
@@ -204,9 +198,8 @@
   </div>
 
   <script>
-    // Cuenta regresiva dinámica hasta el 11 de octubre de 2025 a las 15:00
     const countdown = () => {
-      const targetDate = new Date("2025-10-11T15:00:00").getTime();
+      const targetDate = new Date("2025-12-28T13:00:00").getTime();
       const now = new Date().getTime();
       const difference = targetDate - now;
 
@@ -227,11 +220,8 @@
     }
 
     setInterval(countdown, 1000);
-    countdown(); // primer llamado inmediato
+    countdown();
   </script>
 
 </body>
 </html>
-
-
-
